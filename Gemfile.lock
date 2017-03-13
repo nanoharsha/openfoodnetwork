@@ -406,7 +406,7 @@ GEM
     guard-zeus (0.0.1)
       guard
       zeus
-    haml (4.0.4)
+    haml (4.0.7)
       tilt
     highline (1.6.18)
     hike (1.2.3)
@@ -684,7 +684,7 @@ DEPENDENCIES
   guard-rails
   guard-rspec
   guard-zeus
-  haml
+  haml (>= 4.0.5)
   i18n (~> 0.6.11)
   immigrant
   jquery-rails
@@ -733,5 +733,8 @@ DEPENDENCIES
   wicked_pdf
   wkhtmltopdf-binary
 
+RUBY VERSION
+   ruby 2.3.1p112
+
 BUNDLED WITH
-   1.10.6
+   1.13.6
