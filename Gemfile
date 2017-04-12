@@ -122,7 +122,7 @@ group :development do
   gem 'pry-byebug'
   gem 'debugger-linecache'
   gem 'guard'
-  gem 'guard-livereload'
+  gem 'guard-livereload', '>= 2.5.2'
   gem 'rack-livereload'
   gem 'guard-rails'
   gem 'guard-zeus'
