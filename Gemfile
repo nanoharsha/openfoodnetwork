@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 ruby "2.1.5"
 
-gem 'rails', '3.2.21'
-gem 'rails-i18n', '~> 3.0.0'
+gem 'rails', '6.0.3.5'
+gem 'rails-i18n', '~> 4.0.2'
 gem 'i18n', '~> 0.6.11'
 
 # Patched version. See http://rubysec.com/advisories/CVE-2015-5312/.
@@ -21,7 +21,7 @@ gem 'spree_paypal_express', :github => "openfoodfoundation/better_spree_paypal_e
 
 gem 'delayed_job_active_record'
 gem 'daemons'
-gem 'comfortable_mexican_sofa'
+gem 'comfortable_mexican_sofa', '>= 1.6.24'
 
 # Fix bug in simple_form preventing collection_check_boxes usage within form_for block
 # When merged, revert to upstream gem
@@ -48,18 +48,18 @@ gem 'paperclip'
 gem 'dalli'
 gem 'geocoder'
 gem 'gmaps4rails'
-gem 'spinjs-rails'
+gem 'spinjs-rails', '>= 1.3'
 gem 'rack-ssl', :require => 'rack/ssl'
 gem 'custom_error_message', :github => 'jeremydurham/custom-err-msg'
 gem 'angularjs-file-upload-rails', '~> 1.1.0'
-gem 'roadie-rails', '~> 1.0.3'
-gem 'figaro'
+gem 'roadie-rails', '~> 1.0.5'
+gem 'figaro', '>= 1.0.0'
 gem 'blockenspiel'
 gem 'acts-as-taggable-on', '~> 3.4'
 gem 'paper_trail', '~> 3.0.8'
 gem 'diffy'
 
-gem 'wicked_pdf'
+gem 'wicked_pdf', '>= 0.11.0'
 gem 'wkhtmltopdf-binary'
 
 gem 'foreigner'
