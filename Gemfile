@@ -6,7 +6,7 @@ gem 'rails-i18n', '~> 3.0.0'
 gem 'i18n', '~> 0.6.11'
 
 # Patched version. See http://rubysec.com/advisories/CVE-2015-5312/.
-gem 'nokogiri', '>= 1.6.7.1'
+gem 'nokogiri', '>= 1.11.4'
 
 gem 'pg'
 gem 'spree', github: 'openfoodfoundation/spree', branch: '1-3-stable'
@@ -35,11 +35,11 @@ gem 'haml'
 gem 'sass', "~> 3.3"
 gem 'sass-rails', '~> 3.2.3', groups: [:default, :assets]
 gem 'redcarpet'
-gem 'aws-sdk'
-gem 'db2fog'
+gem 'aws-sdk', '>= 1.11.1'
+gem 'db2fog', '>= 0.8.0'
 gem 'andand'
 gem 'truncate_html'
-gem 'representative_view'
+gem 'representative_view', '>= 1.2.2'
 gem 'rabl'
 gem "active_model_serializers"
 gem 'oj'
@@ -98,12 +98,12 @@ group :test, :development do
   gem 'rspec-rails'
   gem 'shoulda-matchers'
   gem 'factory_girl_rails', :require => false
-  gem 'capybara'
+  gem 'capybara', '>= 2.5.0'
   gem 'database_cleaner', '0.7.1', :require => false
   gem 'awesome_print'
   gem 'letter_opener'
   gem 'timecop'
-  gem 'poltergeist'
+  gem 'poltergeist', '>= 1.7.0'
   gem 'rspec-retry'
   gem 'json_spec'
   gem 'unicorn-rails'
