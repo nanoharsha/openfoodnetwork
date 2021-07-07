@@ -101,7 +101,7 @@ group :test, :development do
   gem 'capybara'
   gem 'database_cleaner', '0.7.1', :require => false
   gem 'awesome_print'
-  gem 'letter_opener'
+  gem 'letter_opener', '>= 1.0.0'
   gem 'timecop'
   gem 'poltergeist'
   gem 'rspec-retry'
@@ -112,7 +112,7 @@ group :test, :development do
 end
 
 group :test do
-  gem 'webmock'
+  gem 'webmock', '>= 1.13.0'
 
   # See spec/spec_helper.rb for instructions
   #gem 'perftools.rb'
