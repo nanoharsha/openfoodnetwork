@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 ruby "2.1.5"
 
-gem 'rails', '3.2.21'
-gem 'rails-i18n', '~> 3.0.0'
+gem 'rails', '4.0.0'
+gem 'rails-i18n', '~> 4.0.0'
 gem 'i18n', '~> 0.6.11'
 
 # Patched version. See http://rubysec.com/advisories/CVE-2015-5312/.
@@ -21,7 +21,7 @@ gem 'spree_paypal_express', :github => "openfoodfoundation/better_spree_paypal_e
 
 gem 'delayed_job_active_record'
 gem 'daemons'
-gem 'comfortable_mexican_sofa'
+gem 'comfortable_mexican_sofa', '>= 1.6.24'
 
 # Fix bug in simple_form preventing collection_check_boxes usage within form_for block
 # When merged, revert to upstream gem
@@ -33,10 +33,10 @@ gem 'bugsnag'
 gem 'newrelic_rpm'
 gem 'haml'
 gem 'sass', "~> 3.3"
-gem 'sass-rails', '~> 3.2.3', groups: [:default, :assets]
+gem 'sass-rails', '~> 4.0.0', groups: [:default, :assets]
 gem 'redcarpet'
 gem 'aws-sdk'
-gem 'db2fog'
+gem 'db2fog', '>= 0.9.0'
 gem 'andand'
 gem 'truncate_html'
 gem 'representative_view'
@@ -48,18 +48,18 @@ gem 'paperclip'
 gem 'dalli'
 gem 'geocoder'
 gem 'gmaps4rails'
-gem 'spinjs-rails'
+gem 'spinjs-rails', '>= 1.3'
 gem 'rack-ssl', :require => 'rack/ssl'
 gem 'custom_error_message', :github => 'jeremydurham/custom-err-msg'
 gem 'angularjs-file-upload-rails', '~> 1.1.0'
 gem 'roadie-rails', '~> 1.0.3'
-gem 'figaro'
+gem 'figaro', '>= 0.7.0'
 gem 'blockenspiel'
 gem 'acts-as-taggable-on', '~> 3.4'
 gem 'paper_trail', '~> 3.0.8'
 gem 'diffy'
 
-gem 'wicked_pdf'
+gem 'wicked_pdf', '>= 0.11.0'
 gem 'wkhtmltopdf-binary'
 
 gem 'foreigner'
@@ -70,8 +70,8 @@ gem 'whenever', require: false
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'compass-rails'
-  gem 'coffee-rails', '~> 3.2.1'
+  gem 'compass-rails', '>= 2.0.4'
+  gem 'coffee-rails', '~> 4.0.0'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem 'therubyracer'
@@ -79,15 +79,15 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 
   gem 'turbo-sprockets-rails3'
-  gem 'foundation-icons-sass-rails'
-  gem 'momentjs-rails'
+  gem 'foundation-icons-sass-rails', '>= 3.0.0'
+  gem 'momentjs-rails', '>= 2.5.1'
   gem 'angular-rails-templates', '~> 0.2.0'
 end
 
-gem "foundation-rails"
+gem "foundation-rails", ">= 5.5.0.0"
 gem 'foundation_rails_helper', github: 'willrjmarshall/foundation_rails_helper', branch: "rails3"
 
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 2.2.2'
 gem 'css_splitter'
 
 
@@ -95,9 +95,9 @@ group :test, :development do
   # Pretty printed test output
   gem 'turn', '~> 0.8.3', :require => false
   gem 'fuubar'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 2.14.0'
   gem 'shoulda-matchers'
-  gem 'factory_girl_rails', :require => false
+  gem 'factory_girl_rails', '>= 3.3.0', :require => false
   gem 'capybara'
   gem 'database_cleaner', '0.7.1', :require => false
   gem 'awesome_print'
