@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 ruby "2.1.5"
 
-gem 'rails', '3.2.21'
-gem 'rails-i18n', '~> 3.0.0'
+gem 'rails', '5.2.8.1'
+gem 'rails-i18n', '~> 4.0.2'
 gem 'i18n', '~> 0.6.11'
 
 # Patched version. See http://rubysec.com/advisories/CVE-2015-5312/.
@@ -52,8 +52,8 @@ gem 'spinjs-rails'
 gem 'rack-ssl', :require => 'rack/ssl'
 gem 'custom_error_message', :github => 'jeremydurham/custom-err-msg'
 gem 'angularjs-file-upload-rails', '~> 1.1.0'
-gem 'roadie-rails', '~> 1.0.3'
-gem 'figaro'
+gem 'roadie-rails', '~> 1.0.5'
+gem 'figaro', '>= 1.0.0'
 gem 'blockenspiel'
 gem 'acts-as-taggable-on', '~> 3.4'
 gem 'paper_trail', '~> 3.0.8'
