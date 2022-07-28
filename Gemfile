@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 ruby "2.1.5"
 
-gem 'rails', '3.2.21'
-gem 'rails-i18n', '~> 3.0.0'
+gem 'rails', '5.2.8.1'
+gem 'rails-i18n', '~> 4.0.2'
 gem 'i18n', '~> 0.6.11'
 
 # Patched version. See http://rubysec.com/advisories/CVE-2015-5312/.
@@ -19,7 +19,7 @@ gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '1-3-stable'
 gem 'spree_paypal_express', :github => "openfoodfoundation/better_spree_paypal_express", :branch => "hide-password"
 #gem 'spree_paypal_express', :github => "spree-contrib/better_spree_paypal_express", :branch => "1-3-stable"
 
-gem 'delayed_job_active_record'
+gem 'delayed_job_active_record', '>= 4.1.3'
 gem 'daemons'
 gem 'comfortable_mexican_sofa'
 
@@ -52,11 +52,11 @@ gem 'spinjs-rails'
 gem 'rack-ssl', :require => 'rack/ssl'
 gem 'custom_error_message', :github => 'jeremydurham/custom-err-msg'
 gem 'angularjs-file-upload-rails', '~> 1.1.0'
-gem 'roadie-rails', '~> 1.0.3'
-gem 'figaro'
+gem 'roadie-rails', '~> 1.0.5'
+gem 'figaro', '>= 1.0.0'
 gem 'blockenspiel'
-gem 'acts-as-taggable-on', '~> 3.4'
-gem 'paper_trail', '~> 3.0.8'
+gem 'acts-as-taggable-on', '~> 4.0', '>= 4.0.0'
+gem 'paper_trail', '~> 4.0.0'
 gem 'diffy'
 
 gem 'wicked_pdf'
