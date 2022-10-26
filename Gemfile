@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby "2.1.5"
 
 gem 'rails', '3.2.21'
-gem 'rails-i18n', '~> 3.0.0'
+gem 'rails-i18n', '~> 3.0.1'
 gem 'i18n', '~> 0.6.11'
 
 # Patched version. See http://rubysec.com/advisories/CVE-2015-5312/.
@@ -33,7 +33,7 @@ gem 'bugsnag'
 gem 'newrelic_rpm'
 gem 'haml'
 gem 'sass', "~> 3.3"
-gem 'sass-rails', '~> 3.2.3', groups: [:default, :assets]
+gem 'sass-rails', '~> 3.2.6', groups: [:default, :assets]
 gem 'redcarpet'
 gem 'aws-sdk'
 gem 'db2fog'
@@ -71,7 +71,7 @@ gem 'whenever', require: false
 # in production environments by default.
 group :assets do
   gem 'compass-rails'
-  gem 'coffee-rails', '~> 3.2.1'
+  gem 'coffee-rails', '~> 3.2.2'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem 'therubyracer'
