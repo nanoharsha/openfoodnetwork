@@ -45,7 +45,7 @@ gem "active_model_serializers"
 gem 'oj'
 gem 'deface', :github => 'spree/deface', :ref => '1110a13'
 gem 'paperclip'
-gem 'dalli'
+gem 'dalli', '>= 3.2.3'
 gem 'geocoder'
 gem 'gmaps4rails'
 gem 'spinjs-rails'
