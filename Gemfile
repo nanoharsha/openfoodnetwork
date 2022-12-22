@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 ruby "2.1.5"
 
-gem 'rails', '3.2.21'
-gem 'rails-i18n', '~> 3.0.0'
+gem 'rails', '4.0.0'
+gem 'rails-i18n', '~> 4.0.0'
 gem 'i18n', '~> 0.6.11'
 
 # Patched version. See http://rubysec.com/advisories/CVE-2015-5312/.
@@ -33,10 +33,10 @@ gem 'bugsnag'
 gem 'newrelic_rpm'
 gem 'haml'
 gem 'sass', "~> 3.3"
-gem 'sass-rails', '~> 3.2.3', groups: [:default, :assets]
+gem 'sass-rails', '~> 4.0.0', groups: [:default, :assets]
 gem 'redcarpet'
 gem 'aws-sdk'
-gem 'db2fog'
+gem 'db2fog', '>= 0.9.0'
 gem 'andand'
 gem 'truncate_html'
 gem 'representative_view'
@@ -71,7 +71,7 @@ gem 'whenever', require: false
 # in production environments by default.
 group :assets do
   gem 'compass-rails'
-  gem 'coffee-rails', '~> 3.2.1'
+  gem 'coffee-rails', '~> 4.0.0'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem 'therubyracer'
@@ -81,7 +81,7 @@ group :assets do
   gem 'turbo-sprockets-rails3'
   gem 'foundation-icons-sass-rails'
   gem 'momentjs-rails'
-  gem 'angular-rails-templates', '~> 0.2.0'
+  gem 'angular-rails-templates', '~> 1.0.1'
 end
 
 gem "foundation-rails"
