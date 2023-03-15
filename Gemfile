@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
 ruby "2.1.5"
 
-gem 'rails', '3.2.21'
-gem 'rails-i18n', '~> 3.0.0'
+gem 'rails', '6.1.7.3'
+gem 'rails-i18n', '~> 4.0.2'
 gem 'i18n', '~> 0.6.11'
 
 # Patched version. See http://rubysec.com/advisories/CVE-2015-5312/.
-gem 'nokogiri', '>= 1.6.7.1'
+gem 'nokogiri', '>= 1.10.5'
 
 gem 'pg'
 gem 'spree', github: 'openfoodfoundation/spree', branch: '1-3-stable'
@@ -19,7 +19,7 @@ gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '1-3-stable'
 gem 'spree_paypal_express', :github => "openfoodfoundation/better_spree_paypal_express", :branch => "hide-password"
 #gem 'spree_paypal_express', :github => "spree-contrib/better_spree_paypal_express", :branch => "1-3-stable"
 
-gem 'delayed_job_active_record'
+gem 'delayed_job_active_record', '>= 4.1.5'
 gem 'daemons'
 gem 'comfortable_mexican_sofa'
 
@@ -33,10 +33,10 @@ gem 'bugsnag'
 gem 'newrelic_rpm'
 gem 'haml'
 gem 'sass', "~> 3.3"
-gem 'sass-rails', '~> 3.2.3', groups: [:default, :assets]
+gem 'sass-rails', '~> 5.0.8', groups: [:default, :assets]
 gem 'redcarpet'
 gem 'aws-sdk'
-gem 'db2fog'
+gem 'db2fog', '>= 0.9.0'
 gem 'andand'
 gem 'truncate_html'
 gem 'representative_view'
@@ -52,11 +52,11 @@ gem 'spinjs-rails'
 gem 'rack-ssl', :require => 'rack/ssl'
 gem 'custom_error_message', :github => 'jeremydurham/custom-err-msg'
 gem 'angularjs-file-upload-rails', '~> 1.1.0'
-gem 'roadie-rails', '~> 1.0.3'
-gem 'figaro'
+gem 'roadie-rails', '~> 1.0.5'
+gem 'figaro', '>= 1.0.0'
 gem 'blockenspiel'
-gem 'acts-as-taggable-on', '~> 3.4'
-gem 'paper_trail', '~> 3.0.8'
+gem 'acts-as-taggable-on', '~> 4.0', '>= 4.0.0'
+gem 'paper_trail', '~> 10.3.1'
 gem 'diffy'
 
 gem 'wicked_pdf'
@@ -70,8 +70,8 @@ gem 'whenever', require: false
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'compass-rails'
-  gem 'coffee-rails', '~> 3.2.1'
+  gem 'compass-rails', '>= 3.0.0'
+  gem 'coffee-rails', '~> 4.2.2'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem 'therubyracer'
@@ -81,13 +81,13 @@ group :assets do
   gem 'turbo-sprockets-rails3'
   gem 'foundation-icons-sass-rails'
   gem 'momentjs-rails'
-  gem 'angular-rails-templates', '~> 0.2.0'
+  gem 'angular-rails-templates', '~> 1.0.0'
 end
 
 gem "foundation-rails"
 gem 'foundation_rails_helper', github: 'willrjmarshall/foundation_rails_helper', branch: "rails3"
 
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.0.1'
 gem 'css_splitter'
 
 
