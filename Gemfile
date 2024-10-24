@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 ruby "2.1.5"
 
-gem 'rails', '3.2.21'
-gem 'rails-i18n', '~> 3.0.0'
+gem 'rails', '6.1.7.9'
+gem 'rails-i18n', '~> 4.0.3'
 gem 'i18n', '~> 0.6.11'
 
 # Patched version. See http://rubysec.com/advisories/CVE-2015-5312/.
@@ -33,7 +33,7 @@ gem 'bugsnag'
 gem 'newrelic_rpm'
 gem 'haml'
 gem 'sass', "~> 3.3"
-gem 'sass-rails', '~> 3.2.3', groups: [:default, :assets]
+gem 'sass-rails', '~> 6.0.0', groups: [:default, :assets]
 gem 'redcarpet'
 gem 'aws-sdk'
 gem 'db2fog'
@@ -52,14 +52,14 @@ gem 'spinjs-rails'
 gem 'rack-ssl', :require => 'rack/ssl'
 gem 'custom_error_message', :github => 'jeremydurham/custom-err-msg'
 gem 'angularjs-file-upload-rails', '~> 1.1.0'
-gem 'roadie-rails', '~> 1.0.3'
-gem 'figaro'
+gem 'roadie-rails', '~> 1.0.5'
+gem 'figaro', '>= 1.0.0'
 gem 'blockenspiel'
 gem 'acts-as-taggable-on', '~> 3.4'
 gem 'paper_trail', '~> 3.0.8'
 gem 'diffy'
 
-gem 'wicked_pdf'
+gem 'wicked_pdf', '>= 1.0.0'
 gem 'wkhtmltopdf-binary'
 
 gem 'foreigner'
@@ -84,7 +84,7 @@ group :assets do
   gem 'angular-rails-templates', '~> 0.2.0'
 end
 
-gem "foundation-rails"
+gem "foundation-rails", ">= 6.5.1.0"
 gem 'foundation_rails_helper', github: 'willrjmarshall/foundation_rails_helper', branch: "rails3"
 
 gem 'jquery-rails'
