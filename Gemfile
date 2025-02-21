@@ -6,7 +6,7 @@ gem 'rails-i18n', '~> 3.0.0'
 gem 'i18n', '~> 0.6.11'
 
 # Patched version. See http://rubysec.com/advisories/CVE-2015-5312/.
-gem 'nokogiri', '>= 1.6.7.1'
+gem 'nokogiri', '>= 1.18.3'
 
 gem 'pg'
 gem 'spree', github: 'openfoodfoundation/spree', branch: '1-3-stable'
@@ -35,7 +35,7 @@ gem 'haml'
 gem 'sass', "~> 3.3"
 gem 'sass-rails', '~> 3.2.3', groups: [:default, :assets]
 gem 'redcarpet'
-gem 'aws-sdk'
+gem 'aws-sdk', '>= 1.52.0'
 gem 'db2fog'
 gem 'andand'
 gem 'truncate_html'
