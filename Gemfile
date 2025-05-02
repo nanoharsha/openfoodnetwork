@@ -95,7 +95,7 @@ group :test, :development do
   # Pretty printed test output
   gem 'turn', '~> 0.8.3', :require => false
   gem 'fuubar'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 8.0.0'
   gem 'shoulda-matchers'
   gem 'factory_girl_rails', :require => false
   gem 'capybara'
