@@ -35,8 +35,8 @@ gem 'haml'
 gem 'sass', "~> 3.3"
 gem 'sass-rails', '~> 3.2.3', groups: [:default, :assets]
 gem 'redcarpet'
-gem 'aws-sdk'
-gem 'db2fog'
+gem 'aws-sdk', '>= 1.52.0'
+gem 'db2fog', '>= 0.9.0'
 gem 'andand'
 gem 'truncate_html'
 gem 'representative_view'
