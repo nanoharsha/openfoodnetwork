@@ -29,7 +29,7 @@ gem 'simple_form', :github => 'RohanM/simple_form'
 
 gem 'unicorn'
 gem 'angularjs-rails', '1.2.13'
-gem 'bugsnag'
+gem 'bugsnag', '>= 2.7.0'
 gem 'newrelic_rpm'
 gem 'haml'
 gem 'sass', "~> 3.3"
